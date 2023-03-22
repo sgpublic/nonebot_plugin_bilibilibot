@@ -357,7 +357,7 @@ async def sendHelpMsg(event: MessageEvent):
     helpMsg = ""
     with open(f'{PACKAGEPATH}/file/source/help.json', 'r', encoding='utf-8') as f:
         helpMsg = json.load(f)
-    await helpCommand.finish(helpMsg)
+    # await helpCommand.finish(helpMsg)
 
 publicBroacast = on_command("broacast", aliases={'广播'}, permission=permission.SUPERUSER)
 @publicBroacast.handle()
